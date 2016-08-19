@@ -1,0 +1,119 @@
+﻿body {
+}
+
+.UCMOMainDivcss {
+    margin: auto;
+    width: 60%;
+    border: 3px solid goldenrod;
+    padding: 5px;
+}
+
+.UCMORightDivcss {
+    text-align: center;
+    float: right;
+    width: 200px;
+    height: 100px;
+}
+
+.UCMOMainImagecss {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto;
+}
+.UCMOSubImagecss {
+    display: block;
+    height: 322px;
+    width: 1200px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
+.UCMOLabelCss {
+    color: black;
+    margin: 23px auto 0 auto;
+    
+    width: 650px;
+   
+}
+.UCMOLinkButtonWidth {
+    width: 100px;
+    float: right;
+}
+.UCMOTextBoxCss {
+    border-width: 3px;
+    border-color: black;
+    margin: 0px auto 0 auto;
+    border-radius:10px;
+    width: 150px;
+    box-shadow:  0 0 2px 2px #d9d9d9;
+}
+.Initial {
+    display: block;
+    padding: 4px 18px 4px 18px;
+    float: left;
+    background: url("/Images/PurpleGradient.jpg") no-repeat right top;
+    color: white;
+    font-weight: bold;
+    margin-right: 20px;
+    width: 150px;
+}
+
+    .Initial:hover {
+        color: White;
+        background: url("/Images/SelectedButton.png") no-repeat right top;
+        opacity: 1.0;
+        filter: alpha(opacity=100);
+        margin-right: 20px;
+        width: 150px;
+    }
+
+.Clicked {
+    float: left;
+    display: block;
+    background: url("/Images/PurpleGradient.jpg") no-repeat right top;
+    padding: 4px 18px 4px 18px;
+    color: Black;
+    font-weight: bold;
+    color: White;
+    margin-right: 20px;
+    width: 150px;
+}
+
+.auto-style2 {
+    width: 800px;
+    position: relative;
+    height: 322px;
+}
+
+.auto-style3 {
+    width: 824px;
+    height: 25px;
+    font-size: x-large;
+}
+
+.auto-style4 {
+    width: 824px;
+}
+
+.auto-style5 {
+    text-align: center;
+}
+
+.auto-style6 {
+    background-color: #3366FF;
+}
+
+.auto-style7 {
+    color: black;
+    background-color: #FFFFFF;
+}
+
+.auto-style8 {
+    height: 360px;
+    width: inherit;
+}
+
+.ucmlogo {
+    background-position: Right;
+}

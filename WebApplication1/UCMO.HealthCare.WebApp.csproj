@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F3F7C878-B2D5-49B0-9E15-ABCC455F3340}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UCMOHealthCare</RootNamespace>
+    <AssemblyName>UCMOHealthCare</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AgentViewUpdatedetails.aspx.designer.cs">
+      <DependentUpon>AgentViewUpdatedetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="assistanceResponses.aspx.designer.cs">
+      <DependentUpon>assistanceResponses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="checkFamilyMemberDetailsPO.aspx.designer.cs">
+      <DependentUpon>checkFamilyMemberDetailsPO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DefaultHome.aspx.designer.cs">
+      <DependentUpon>DefaultHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="loginagenthome.aspx.designer.cs">
+      <DependentUpon>loginagenthome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="loginmanagerhome.aspx.designer.cs">
+      <DependentUpon>loginmanagerhome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginPage.aspx.designer.cs">
+      <DependentUpon>LoginPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="loginpolicyholderhome.aspx.designer.cs">
+      <DependentUpon>loginpolicyholderhome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="loginpolicyownerhome.aspx.designer.cs">
+      <DependentUpon>loginpolicyownerhome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerViewUpdatedetails.aspx.designer.cs">
+      <DependentUpon>ManagerViewUpdatedetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="policyholderViewMyDetails.aspx.designer.cs">
+      <DependentUpon>policyholderViewMyDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PolicyInformation.aspx.cs">
+      <DependentUpon>PolicyInformation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PolicyInformation.aspx.designer.cs">
+      <DependentUpon>PolicyInformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PolicyOwnerPolicyDetails.aspx.cs">
+      <DependentUpon>PolicyOwnerPolicyDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PolicyOwnerPolicyDetails.aspx.designer.cs">
+      <DependentUpon>PolicyOwnerPolicyDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="provideAssistance.aspx.cs">
+      <DependentUpon>provideAssistance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="provideAssistance.aspx.designer.cs">
+      <DependentUpon>provideAssistance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="requestAssistance.aspx.cs">
+      <DependentUpon>requestAssistance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="requestAssistance.aspx.designer.cs">
+      <DependentUpon>requestAssistance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="responseToGuestQuotes.aspx.cs">
+      <DependentUpon>responseToGuestQuotes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="responseToGuestQuotes.aspx.designer.cs">
+      <DependentUpon>responseToGuestQuotes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UCMO.Master.cs">
+      <DependentUpon>UCMO.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UCMO.Master.designer.cs">
+      <DependentUpon>UCMO.Master</DependentUpon>
+    </Compile>
+    <Compile Include="updateNewPrices.aspx.cs">
+      <DependentUpon>updateNewPrices.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="updateNewPrices.aspx.designer.cs">
+      <DependentUpon>updateNewPrices.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewAgentDetails.aspx.cs">
+      <DependentUpon>viewAgentDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewAgentDetails.aspx.designer.cs">
+      <DependentUpon>viewAgentDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewCustomerDetails.aspx.cs">
+      <DependentUpon>viewCustomerDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewCustomerDetails.aspx.designer.cs">
+      <DependentUpon>viewCustomerDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewNewUpdates.aspx.cs">
+      <DependentUpon>viewNewUpdates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewNewUpdates.aspx.designer.cs">
+      <DependentUpon>viewNewUpdates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewUpdatePersonalDetails.aspx.cs">
+      <DependentUpon>ViewUpdatePersonalDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewUpdatePersonalDetails.aspx.designer.cs">
+      <DependentUpon>ViewUpdatePersonalDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Welcome.aspx.cs">
+      <DependentUpon>Welcome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Welcome.aspx.designer.cs">
+      <DependentUpon>Welcome.aspx</DependentUpon>
+    </Compile>
+    <Content Include="AgentViewUpdatedetails.aspx" />
+    <Compile Include="App_Code\Agent.cs" />
+    <Compile Include="App_Code\Customer.cs" />
+    <Compile Include="App_Code\LoginControl.cs" />
+    <Compile Include="App_Code\Manager.cs" />
+    <Compile Include="App_Code\PolicyDetails.cs" />
+    <Compile Include="App_Code\PolicyHolder.cs" />
+    <Compile Include="App_Code\PolicyOwner.cs" />
+    <Compile Include="AgentViewUpdatedetails.aspx.cs">
+      <DependentUpon>AgentViewUpdatedetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="assistanceResponses.aspx.cs">
+      <DependentUpon>assistanceResponses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="checkFamilyMemberDetailsPO.aspx.cs">
+      <DependentUpon>checkFamilyMemberDetailsPO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DefaultHome.aspx.cs">
+      <DependentUpon>DefaultHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="loginagenthome.aspx.cs">
+      <DependentUpon>loginagenthome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="loginmanagerhome.aspx.cs">
+      <DependentUpon>loginmanagerhome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginPage.aspx.cs">
+      <DependentUpon>LoginPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="loginpolicyholderhome.aspx.cs">
+      <DependentUpon>loginpolicyholderhome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="loginpolicyownerhome.aspx.cs">
+      <DependentUpon>loginpolicyownerhome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManagerViewUpdatedetails.aspx.cs">
+      <DependentUpon>ManagerViewUpdatedetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="policyholderViewMyDetails.aspx.cs">
+      <DependentUpon>policyholderViewMyDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="assistanceResponses.aspx" />
+    <Content Include="checkFamilyMemberDetailsPO.aspx" />
+    <Content Include="CSS\UCMOStyleSheet.css" />
+    <Content Include="DefaultHome.aspx" />
+    <Content Include="Images\fhc.jpg" />
+    <Content Include="Images\HealthInsuranceSystemLogo.png" />
+    <Content Include="Images\fhi.png" />
+    <Content Include="Images\PurpleGradient.jpg" />
+    <Content Include="Images\UCMLogo.jpg" />
+    <Content Include="loginagenthome.aspx" />
+    <Content Include="loginmanagerhome.aspx" />
+    <Content Include="LoginPage.aspx" />
+    <Content Include="loginpolicyholderhome.aspx" />
+    <Content Include="loginpolicyownerhome.aspx" />
+    <Content Include="ManagerViewUpdatedetails.aspx" />
+    <Content Include="policyholderViewMyDetails.aspx" />
+    <Content Include="PolicyInformation.aspx" />
+    <Content Include="PolicyOwnerPolicyDetails.aspx" />
+    <Content Include="provideAssistance.aspx" />
+    <Content Include="requestAssistance.aspx" />
+    <Content Include="responseToGuestQuotes.aspx" />
+    <Content Include="updateNewPrices.aspx" />
+    <Content Include="viewAgentDetails.aspx" />
+    <Content Include="viewCustomerDetails.aspx" />
+    <Content Include="viewNewUpdates.aspx" />
+    <Content Include="ViewUpdatePersonalDetails.aspx" />
+    <Content Include="Welcome.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\HIS image 1 resize.jpg" />
+    <Content Include="Images\InitialImage.png" />
+    <Content Include="Images\SelectedButton.png" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Code\HIS Final.pdf" />
+    <Content Include="UCMO.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:43645/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
